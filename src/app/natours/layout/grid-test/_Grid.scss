@@ -1,0 +1,18 @@
+@import "src/app/natours/sass/abstracts/_variables.scss";
+@import "src/app/natours/sass/abstracts/_mixins.scss";
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  [class^="col-"] {
+    float: left;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+  @include clearfix;
+}

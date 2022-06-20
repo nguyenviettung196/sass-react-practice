@@ -1,0 +1,7 @@
+@import "src/app/natours/sass/abstracts/_variables.scss";
+
+.col-2-of-3 {
+  width: calc(
+    (100% - #{$gutter-horizontal}) - (100% - #{$gutter-horizontal * 2}) / 3
+  );
+}
